@@ -1,0 +1,2 @@
+## Library App | Odin Project
+This is my solution for the library app project from the Odin project javascript course. I presently has a simple functionality to add a list of book and add reading status.
