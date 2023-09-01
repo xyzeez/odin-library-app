@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App | Odin Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/script.js" defer></script>
+</head>
+<body>
+    <main class="main library">
+        <form id="libraryForm" class="library__form form">
+            <fieldset class="form__field">
+                <legend class="sr-only">Input Book Information</legend>
+                <div class="form__input-container">
+                    <label for="bookName" class="sr-only">Input Book Name:</label>
+                    <input type="text" id="bookName" class="form__input" placeholder="Book Name" required>
+                </div>
+                <div class="form__inner">
+                    <div class="form__input-container">
+                        <label for="bookAuthor" class="sr-only">Input Book Author:</label>
+                        <input type="text" id="bookAuthor" class="form__input" placeholder="Book Author" required>
+                    </div>
+                    <div class="form__input-container">                
+                        <label for="bookStatus" class="sr-only">Select Book Status:</label>
+                        <select id="bookStatus" class="form__options" required>
+                            <option value="" selected>Have You read this book?</option>
+                            <option value="Read">Yes</option>
+                            <option value="Not Read">No</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" id="formBtn" class="form__btn btn">Add Book</button>
+        </form>
+        <table id="libraryTable" class="library__table table">
+            <thead class="table__head">
+                <tr>
+                    <th>Books</th>
+                    <th>Authors</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody" class="table__body">
+            </tbody>
+        </table>          
+    </main>
+</body>
+</html>
